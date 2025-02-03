@@ -4,25 +4,31 @@ class circle
 {
 	public :
 		int r;
-		float area;
+		float area,circum;
 	circle()  //default constructor
 	{
 		cout<<"\n\nenter the radius of circle:";
 		cin>>r;
 		area = 3.14*r*r;
 		cout<<"\n\narea:"<<area;
+		circum = 2*3.14*r;
+		cout<<"\n\ncircumferrence:"<<circum;
 	}
 	circle(int r1)
 	{
 		r=r1;
 		area = 3.14*r*r;
 		cout<<"\n\narea:"<<area;
+		circum = 2*3.14*r;
+		cout<<"\n\ncircumferrence:"<<circum;
 	}
 	circle(circle &obj)   //copy constructor
 	{
 		r=obj.r;
 		area =3.14*r*r;
 		cout<<"\n\narea:"<<area;
+		circum = 2*3.14*r;
+		cout<<"\n\ncircumferrence:"<<circum;
 	}
 	~circle()
 	{
